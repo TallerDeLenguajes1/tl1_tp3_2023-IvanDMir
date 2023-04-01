@@ -87,22 +87,22 @@ int i;
 void mostrado( Clientes *array, int cant)
 {
     printf("\n\n");
-    for (int k = 0; k < cant; k++)
+    for (int j = 0; j < cant; j++)
     {
-        printf("CLIENTE N: %d\n", k + 1);
-        printf("NOMBRE: %s\n", array[k].NombreCliente);
-        printf("CANTIDAD DE PRODUCTOS: %d\n",array[k].CantidadProductosAPedir);
+        printf("CLIENTE N: %d\n", j + 1);
+        printf("NOMBRE: %s\n", array[j].NombreCliente);
+        printf("CANTIDAD DE PRODUCTOS: %d\n",array[j].CantidadProductosAPedir);
         printf("\n");
-        for (int i = 0; i < array[k].CantidadProductosAPedir; i++)
+        for (int i = 0; i < array[j].CantidadProductosAPedir; i++)
         {
             printf("Producto N %d\n", i + 1);
-            printf("ID producto: %d\n", array[k].Productos[i].ProductoID);
-            printf("Cantidad: %d\n", array[k].Productos[i].Cantidad);
-            printf("Tipo de producto: %s\n", array[k].Productos[i].TipoProducto);
-            printf("precio unitario: %.2f\n", array[k].Productos[i].PrecioUnitario);
+            printf("ID producto: %d\n", array[j].Productos[i].ProductoID);
+            printf("Cantidad: %d\n", array[j].Productos[i].Cantidad);
+            printf("Tipo de producto: %s\n", array[j].Productos[i].TipoProducto);
+            printf("precio unitario: %.2f\n", array[j].Productos[i].PrecioUnitario);
             printf("\n");
         }
-        printf("\nTOTAL: %.2f\n",costos[k]);
+        printf("\nTOTAL: %.2f\n",costos[j]);
         printf("\n");
         puts("=============== FIN CLiente====================");
         printf("\n");
